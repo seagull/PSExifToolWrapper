@@ -36,7 +36,8 @@ It might feel a little unintuitive at first but you'll get used to it.
 My condolences to AZERTY typists. Feel free to leave an issue case, but don't worry about using fullstops – I'd hate to make you use your SHIFT keys.
 
 ## Token Screenshot
-![image](https://github.com/seagull/PSExifToolWrapper/assets/241834/a1b6e9b3-98a8-4f5b-96d0-b07f3e54883a)
+![image](https://github.com/seagull/PSExifToolWrapper/assets/241834/4d0983c7-2472-4d88-a5a6-fe5453e3903d)
+
 
 ## Changelog
 - Build 21: Initial release
