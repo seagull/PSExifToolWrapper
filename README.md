@@ -1,5 +1,6 @@
 # PSExifToolWrapper
-PSExifToolWrapper, or "seagull's EXIFTool Wrapper", if a PowerShell script that places a shortcut on the user's desktop onto which they can drag-and-drop files, folders, or both. The files dragged will then be run past Phil Harvey's [ExifTool](https://www.exiftool.org), with the user being prompted to either display the files' metadata, write the files' metadata to a text file, or scrub it altogether.
+PSExifToolWrapper, or "seagull's EXIFTool Wrapper", is a PowerShell script that places a shortcut on the user's Desktop, onto which they can drag-and-drop files, folders, or both. The files dragged will then be run past Phil Harvey's [ExifTool](https://www.exiftool.org), with the user being prompted to either display the files' metadata, write the files' metadata to a text file, or scrub it altogether.
+_tl;dr: You can use this to display a file's metadata without learning any command-line flags_
 
 ## Features
 - Downloads ExifTool automatically
