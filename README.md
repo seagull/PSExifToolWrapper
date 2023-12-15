@@ -29,3 +29,7 @@ Once the tool has completed, you'll need to manually quit the CLI window; it won
 
 I have done my best to make the script PowerShell 2.0-compatible, but I do this more as a point of pride than for any specific reason.
 Feel free to run this on your ZX Spectrum but don't complain if it doesn't work.
+
+## Token Screenshot
+
+![image](https://github.com/seagull/PSExifToolWrapper/assets/241834/a1b6e9b3-98a8-4f5b-96d0-b07f3e54883a)
