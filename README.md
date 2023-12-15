@@ -5,6 +5,7 @@ PSExifToolWrapper, or "seagull's EXIFTool Wrapper", if a PowerShell script that 
 - Downloads ExifTool automatically
 - Keeps ExifTool up-to-date
 - Searches recursively through folders dragged onto Desktop shortcut
+- Can scrub the metadata off a file without having to remember the command-line flags
 - Attempts to work around ExifTool's filename limitations (but not when scrubbing)
 
 ## Installation & Usage
