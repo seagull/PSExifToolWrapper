@@ -22,7 +22,7 @@ _Doesn't disabling my PowerShell execution policy pose a security risk?_
 - No
 
 ## Considerations & Shortcomings
-The wrapper script does its best to work around ExifTool's weaknesses with regards to filenames containing uncommon characters (eg, anything outside of [this Unicode block](https://jrgraphix.net/r/Unicode/0020-007F), but that doesn't go as far as for scrubbing.
+The wrapper script does its best to work around ExifTool's weaknesses with regards to filenames containing uncommon characters (eg, anything outside of [this Unicode block](https://jrgraphix.net/r/Unicode/0020-007F)), but that doesn't go as far as for scrubbing.
 Sorry. You'll have to rename your files to be more boring. It'll work fine for analysis, though.
 
 Once the tool has completed, you'll need to manually quit the CLI window; it won't close automatically.
@@ -31,5 +31,4 @@ I have done my best to make the script PowerShell 2.0-compatible, but I do this 
 Feel free to run this on your ZX Spectrum but don't complain if it doesn't work.
 
 ## Token Screenshot
-
 ![image](https://github.com/seagull/PSExifToolWrapper/assets/241834/a1b6e9b3-98a8-4f5b-96d0-b07f3e54883a)
