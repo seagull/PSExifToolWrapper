@@ -33,7 +33,7 @@ I have done my best to make the script PowerShell 2.0-compatible, but I do this 
 Feel free to run this on your ZX Spectrum but don't complain if it doesn't work.
 
 I use the buttons Q, A and Z when I write scripts with prompts because my keyboard doesn't have labels on it and those buttons are at the leftmost so they're the easiest to peck.
-It might feel a little unintuitive at first but you'll get used to it.
+It might feel a little unintuitive at first but you'll get used to it.  
 My condolences to AZERTY typists. Feel free to leave an issue case, but don't worry about using fullstops – I'd hate to make you use your SHIFT keys.
 
 ## Token Screenshot
@@ -42,4 +42,4 @@ My condolences to AZERTY typists. Feel free to leave an issue case, but don't wo
 ## Changelog
 - Build 21: Initial release
 - Build 22: Made it so you can mash ENTER to analyse a file instead of forcing you to press Q
-- Build 23: Added support for finding NTFS Alternative Data Streams, a feature EXIFTool bafflingly does not include
+- Build 24: Added support for finding NTFS Alternative Data Streams, a feature EXIFTool bafflingly does not include
