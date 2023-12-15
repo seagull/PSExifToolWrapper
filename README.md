@@ -27,6 +27,8 @@ _Doesn't disabling my PowerShell execution policy pose a security risk?_
 The wrapper script does its best to work around ExifTool's weaknesses with regards to filenames containing uncommon characters (eg, anything outside of [this Unicode block](https://jrgraphix.net/r/Unicode/0020-007F)), but that doesn't go as far as for scrubbing.
 Sorry. You'll have to rename your files to be more boring. It'll work fine for analysis, though.
 
+**Scrubbing does not remove NTFS Alternative Data Streams.**
+
 Once the tool has completed, you'll need to manually quit the CLI window; it won't close automatically.
 
 I have done my best to make the script PowerShell 2.0-compatible, but I do this more as a point of pride than for any specific reason.
