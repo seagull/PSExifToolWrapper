@@ -7,6 +7,7 @@ PSExifToolWrapper, or "seagull's EXIFTool Wrapper", if a PowerShell script that 
 - Searches recursively through folders dragged onto Desktop shortcut
 - Can scrub the metadata off a file without having to remember the command-line flags
 - Attempts to work around ExifTool's filename limitations (but not when scrubbing)
+- **Detects and displays NTFS Alternative Data Streams** (_not_ an EXIFTool feature)
 
 ## Installation & Usage
 - Download the .zip file and extract the PS1
@@ -36,9 +37,9 @@ It might feel a little unintuitive at first but you'll get used to it.
 My condolences to AZERTY typists. Feel free to leave an issue case, but don't worry about using fullstops – I'd hate to make you use your SHIFT keys.
 
 ## Token Screenshot
-![image](https://github.com/seagull/PSExifToolWrapper/assets/241834/4d0983c7-2472-4d88-a5a6-fe5453e3903d)
-
+![image](https://github.com/seagull/PSExifToolWrapper/assets/241834/90163293-61fa-4324-aab9-4f631e555049)
 
 ## Changelog
 - Build 21: Initial release
 - Build 22: Made it so you can mash ENTER to analyse a file instead of forcing you to press Q
+- Build 23: Added support for finding NTFS Alternative Data Streams, a feature EXIFTool bafflingly does not include
