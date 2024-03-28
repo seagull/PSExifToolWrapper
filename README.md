@@ -9,6 +9,7 @@ _tl;dr: You can use this to display a file's metadata without learning any comma
 - Can scrub the metadata off a file without having to remember the command-line flags
 - Attempts to work around ExifTool's filename limitations (but not when scrubbing)
 - **Detects and displays NTFS Alternative Data Streams** (_not_ an EXIFTool feature)
+- **Detects and displays Digital Signatures** (_also_ not an EXIFTool feature)
 
 ## Installation & Usage
 - Download the .zip file and extract the PS1
@@ -16,8 +17,9 @@ _tl;dr: You can use this to display a file's metadata without learning any comma
 - Type in `Set-ExecutionPolicy Unrestricted` and use Y or A to confirm
   - (The Powershell.png file in the .zip file says basically the same thing)
 - Place the .ps1 file in a folder, ideally one made specifically for it, somewhere your account has write access
-  - (ie NOT Program Files)
+  - (ie **NOT Program Files**)
 - Right-click it and select "Run with PowerShell"
+  - _Administrator privileges not required_
 - The script will produce a shortcut on the Desktop called "EXIFTool"
 - Launch the wrapper by dragging a file, a folder, or a combination onto that shortcut to see files' metadata
 
@@ -28,7 +30,7 @@ _Doesn't disabling my PowerShell execution policy pose a security risk?_
 The wrapper script does its best to work around ExifTool's weaknesses with regards to filenames containing uncommon characters (eg, anything outside of [this Unicode block](https://jrgraphix.net/r/Unicode/0020-007F)), but that doesn't go as far as for scrubbing.
 Sorry. You'll have to rename your files to be more boring. It'll work fine for analysis, though.
 
-**Scrubbing does not remove NTFS Alternative Data Streams.**
+**Scrubbing does not remove NTFS Alternative Data Streams or Digital Signatures.**
 
 Once the tool has completed, you'll need to manually quit the CLI window; it won't close automatically.
 
@@ -43,6 +45,12 @@ My condolences to AZERTY typists. Feel free to leave an issue case, but don't wo
 ![image](https://github.com/seagull/PSExifToolWrapper/assets/241834/90163293-61fa-4324-aab9-4f631e555049)
 
 ## Changelog
-- Build 21: Initial release
-- Build 22: Made it so you can mash ENTER to analyse a file instead of forcing you to press Q
-- Build 24: Added support for finding NTFS Alternative Data Streams, a feature EXIFTool bafflingly does not include
+* Build 21: Initial release
+* Build 22: Made it so you can mash ENTER to analyse a file instead of forcing you to press Q
+* Build 24: Added support for finding NTFS Alternative Data Streams, a feature EXIFTool bafflingly does not include
+* Build 27:
+  - Exiting the tool now closes the command window instead of making _you_ do it
+  - We now pull **digital signatures** from applicable files (another feature ExifTool inexplicably lacks)
+  - We now automatically pull data if only one file was loaded in, with a subsequent choice to scrub the metadata or load it into a file (no more mashing the ENTER key)
+  - We now display the version of EXIFTool present on the device before updating it
+  - Writing a report to a file now produces a slick file-picker instead of forcing you to enter a file path
