@@ -32,8 +32,6 @@ Sorry. You'll have to rename your files to be more boring. It'll work fine for a
 
 **Scrubbing does not remove NTFS Alternative Data Streams or Digital Signatures.**
 
-Once the tool has completed, you'll need to manually quit the CLI window; it won't close automatically.
-
 I have done my best to make the script PowerShell 2.0-compatible, but I do this more as a point of pride than for any specific reason.
 Feel free to run this on your ZX Spectrum but don't complain if it doesn't work.
 
