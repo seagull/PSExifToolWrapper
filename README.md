@@ -8,8 +8,10 @@ _tl;dr: You can use this to display a file's metadata without learning any comma
 - Searches recursively through folders dragged onto Desktop shortcut
 - Can scrub the metadata off a file without having to remember the command-line flags
 - Attempts to work around ExifTool's filename limitations (but not when scrubbing)
-- **Detects and displays NTFS Alternative Data Streams** (_not_ an EXIFTool feature)
-- **Detects and displays Digital Signatures** (_also_ not an EXIFTool feature)
+- Features not part of EXIFTool:
+    - **Detects and displays NTFS Alternative Data Streams**
+    - **Detects and displays Digital Signatures**
+    - **Displays SHA1 and SHA256 file hashes**
 
 ## Installation & Usage
 - Download the .zip file and extract the PS1
@@ -46,9 +48,12 @@ My condolences to AZERTY typists. Feel free to leave an issue case, but don't wo
 * Build 21: Initial release
 * Build 22: Made it so you can mash ENTER to analyse a file instead of forcing you to press Q
 * Build 24: Added support for finding NTFS Alternative Data Streams, a feature EXIFTool bafflingly does not include
-* Build 27:
+* Build 33:
   - Exiting the tool now closes the command window instead of making _you_ do it
   - We now pull **digital signatures** from applicable files (another feature ExifTool inexplicably lacks)
   - We now automatically pull data if only one file was loaded in, with a subsequent choice to scrub the metadata or load it into a file (no more mashing the ENTER key)
   - We now display the version of EXIFTool present on the device before updating it
   - Writing a report to a file now produces a slick file-picker instead of forcing you to enter a file path
+* Build 35:
+  - SHA1/SHA256 filehashes/checksums are now calculated
+  - Running the PS1 file with no arguments will recreate the shortcut on the Desktop (useful when updating wrapper versions)
