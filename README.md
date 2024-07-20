@@ -57,3 +57,5 @@ My condolences to AZERTY typists. Feel free to leave an issue case, but don't wo
 * Build 35:
   - SHA1/SHA256 filehashes/checksums are now calculated
   - Running the PS1 file with no arguments will recreate the shortcut on the Desktop (useful when updating wrapper versions)
+* Build 45:
+  - New build compatible with the weird new Strawberry Perl x86/x64 builds offered on ExifTool.org
