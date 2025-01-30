@@ -59,3 +59,6 @@ My condolences to AZERTY typists. Feel free to leave an issue case, but don't wo
   - Running the PS1 file with no arguments will recreate the shortcut on the Desktop (useful when updating wrapper versions)
 * Build 45:
   - New build compatible with the weird new Strawberry Perl x86/x64 builds offered on ExifTool.org
+* Build 46:
+  - Added `varNoInternet` flag to top of script which can be set to `TRUE` to disable attempts to access the internet
+    (You will need it enabled at least once in order to _actually download_ EXIFTool)
