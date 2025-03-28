@@ -62,3 +62,7 @@ My condolences to AZERTY typists. Feel free to leave an issue case, but don't wo
 * Build 46:
   - Added `varNoInternet` flag to top of script which can be set to `TRUE` to disable attempts to access the internet
     (You will need it enabled at least once in order to _actually download_ EXIFTool)
+* Build 50:
+  - Fixed various issues making text output suck; now text reports work properly with no errors
+  - Errors reading non-existent ADS data are now properly, 𝒈𝒓𝒂𝒄𝒆𝒇𝒖𝒍𝒍𝒚, caught
+  - Social media link transferred from the fascist website to bSky
